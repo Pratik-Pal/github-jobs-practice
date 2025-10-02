@@ -1,0 +1,11 @@
+name: first Workflow
+on: workflow_dispatch #Triggers this job manually
+jobs:
+  first-job: #Job Name
+    runs-on: ubuntu-latest #Runner machine/environment
+    steps: 
+      - name: Print greeting #name of the first step(We should define all the actions to be taken inside the steps)/Whole block is considered as a step here
+        run: echo "Hello World!"  #What should run in this step that we should define here(can be a predefined action / shell script)
+      - name: Print Goodbye
+        run: echo "Done! -- Bye"
+      
